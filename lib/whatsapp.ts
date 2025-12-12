@@ -20,10 +20,10 @@ export function createOrderMessage(details: WhatsAppOrderDetails): string {
   message += "📦 *Order Details:*\n"
   details.items.forEach((item, index) => {
     message += `${index + 1}. ${item.name}\n`
-    message += `   Qty: ${item.quantity} × ${item.price.toFixed(2)} sr. = ${(item.quantity * item.price).toFixed(2)} sr.\n`
+    message += `   Qty: ${item.quantity} × ${item.price.toFixed(2)} sar = ${(item.quantity * item.price).toFixed(2)} sar\n`
   })
 
-  message += `\n💰 *Total: ${details.total.toFixed(2)} sr.*\n`
+  message += `\n💰 *Total: ${details.total.toFixed(2)} sar*\n`
 
   if (details.customerName || details.phone || details.address) {
     message += "\n👤 *Customer Information:*\n"
