@@ -9,7 +9,7 @@ const products = [
     id: "prod-001",
     name: "Premium Food Containers",
     category: "Food Service",
-    price: "24.99 ر.س",
+    price: "24.99 sr.",
     unit: "per 100 units",
     image: "/modern-clear-plastic-food-storage-container.jpg",
     features: ["BPA-Free", "Microwave Safe", "Leak-Proof"],
@@ -18,7 +18,7 @@ const products = [
     id: "prod-002",
     name: "Industrial Storage Bins",
     category: "Industrial",
-    price: "89.99 ر.س",
+    price: "89.99 sr.",
     unit: "per 50 units",
     image: "/large-red-industrial-plastic-storage-bin.jpg",
     features: ["Heavy Duty", "Stackable", "UV Resistant"],
@@ -27,7 +27,7 @@ const products = [
     id: "prod-006",
     name: "Takeaway Container Set",
     category: "Retail",
-    price: "39.99 ر.س",
+    price: "39.99 sr.",
     unit: "per 50 units",
     image: "/takeaway-food-containers-with-lids.jpg",
     features: ["Leak-Resistant", "Microwave Safe", "Stackable"],
@@ -36,12 +36,13 @@ const products = [
     id: "prod-008",
     name: "Custom Packaging Solution",
     category: "Custom",
-    price: "199.99 ر.س",
+    price: "199.99 sr.",
     unit: "starting from",
     image: "/custom-branded-packaging-boxes.jpg",
     features: ["Custom Design", "Logo Printing", "Any Size"],
   },
 ]
+
 
 export function FeaturedProducts() {
   return (
