@@ -6,42 +6,64 @@ import Link from "next/link"
 
 const products = [
   {
-    id: "prod-001",
-    name: "Premium Food Containers",
+    id: "pizza-001",
+    name: "Custom Pizza Box",
     category: "Food Service",
-    price: "24.99 sar",
-    unit: "per 100 units",
-    image: "/modern-clear-plastic-food-storage-container.jpg",
-    features: ["BPA-Free", "Microwave Safe", "Leak-Proof"],
-  },
-  {
-    id: "prod-002",
-    name: "Industrial Storage Bins",
-    category: "Industrial",
-    price: "89.99 sar",
-    unit: "per 50 units",
-    image: "/large-red-industrial-plastic-storage-bin.jpg",
-    features: ["Heavy Duty", "Stackable", "UV Resistant"],
-  },
-  {
-    id: "prod-006",
-    name: "Takeaway Container Set",
-    category: "Retail",
-    price: "39.99 sar",
-    unit: "per 50 units",
-    image: "/takeaway-food-containers-with-lids.jpg",
-    features: ["Leak-Resistant", "Microwave Safe", "Stackable"],
-  },
-  {
-    id: "prod-008",
-    name: "Custom Packaging Solution",
-    category: "Custom",
-    price: "199.99 sar",
+    price: "0.49 sar",
     unit: "starting from",
-    image: "/custom-branded-packaging-boxes.jpg",
-    features: ["Custom Design", "Logo Printing", "Any Size"],
+    image: "/1.png",
+    features: [
+      "Food Grade",
+      "Grease Resistant",
+      "Custom Printing",
+      "All Sizes",
+    ],
+  },
+  {
+    id: "pizza-002",
+    name: "Pizza Box Window",
+    category: "Food Service",
+    price: "0.69 sar",
+    unit: "starting from",
+    image: "/2.png",
+    features: [
+      "Clear Window",
+      "Heat Retention",
+      "Grease Resistant",
+      "Multiple Sizes",
+    ],
+  },
+  {
+    id: "pizza-003",
+    name: "Double Wall Box",
+    category: "Food Service",
+    price: "0.79 sar",
+    unit: "starting from",
+    image: "/3.png",
+    features: [
+      "Double Wall",
+      "Extra Strong",
+      "Moisture Control",
+      "All Sizes",
+    ],
+  },
+  {
+    id: "pizza-004",
+    name: "Printed Pizza Box",
+    category: "Custom",
+    price: "0.99 sar",
+    unit: "starting from",
+    image: "/4.png",
+    features: [
+      "Full Color",
+      "Food Safe",
+      "Eco Friendly",
+      "Any Size",
+    ],
   },
 ]
+
+
 
 
 export function FeaturedProducts() {
@@ -105,10 +127,10 @@ export function FeaturedProducts() {
                       ))}
                     </div>
 
-                    <div className="flex items-baseline gap-1 mb-4">
+                    {/* <div className="flex items-baseline gap-1 mb-4">
                       <span className="text-2xl font-bold text-foreground">{product.price}</span>
                       <span className="text-sm text-muted-foreground">{product.unit}</span>
-                    </div>
+                    </div> */}
 
                     <Button className="w-full bg-transparent" variant="outline">
                       See More

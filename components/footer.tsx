@@ -18,7 +18,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 mb-12">
           {/* Company info */}
           <div className="col-span-2 md:col-span-1">
-            <Image src="/images/newpack-logo.png" alt="NewPack" width={140} height={40} className="h-8 w-auto mb-4" />
+            <Image src="/images/newpack-logo.png" alt="NewPack" width={140} height={40} className="px-5 scale-250"/>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
               Premium plastic packaging solutions serving local businesses across Saudi Arabia.
             </p>

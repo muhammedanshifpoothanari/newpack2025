@@ -42,8 +42,15 @@ export function ProductDetails({ product }: ProductDetailsProps) {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
+             
         {/* Product Image */}
         <div className="relative aspect-square rounded-lg overflow-hidden bg-muted">
+           <Image
+                  src="/backdropPizza.jpeg"
+                  alt="Background"
+                  fill
+                  className="object-cover opacity-20"
+                />
           <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" priority />
         </div>
 
@@ -108,7 +115,7 @@ export function ProductDetails({ product }: ProductDetailsProps) {
               )}
             </div>
           </Card>
-
+{/* 
           <div className="flex items-center gap-4 mb-6">
             <div>
               <label className="text-sm text-muted-foreground mb-2 block">Quantity</label>
@@ -131,7 +138,7 @@ export function ProductDetails({ product }: ProductDetailsProps) {
               <div className="text-sm text-muted-foreground mb-2">Price</div>
               <div className="text-3xl font-bold">{formatPrice(product.price * quantity)}</div>
             </div>
-          </div>
+          </div> */}
 
           <div className="space-y-3 mb-8">
             <Button

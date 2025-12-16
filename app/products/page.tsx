@@ -141,11 +141,21 @@ export default function ProductsPage() {
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                {filteredProducts.map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+  {filteredProducts.flatMap((product) => [
+   
+
+     <ProductCard key={`${product.id}-l`} product={product} size="large" />,
+
+        <ProductCard key={`${product.id}-m`} product={product} size="medium" />,
+
+           <ProductCard key={`${product.id}-s`} product={product} size="small" />
+   
+  ])}
+</div>
+
+
+
             )}
           </div>
         </div>

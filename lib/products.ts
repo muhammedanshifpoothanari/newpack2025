@@ -18,154 +18,261 @@ export interface Product {
 }
 
 export const categories = [
-  { id: "containers", name: "Containers", icon: "📦" },
-  { id: "bottles", name: "Bottles", icon: "🍶" },
-  { id: "bags", name: "Bags", icon: "🛍️" },
-  { id: "packaging", name: "Packaging", icon: "📮" },
-  { id: "custom", name: "Custom Solutions", icon: "⚙️" },
+  { id: "pizza-boxes", name: "pizza-boxes", icon: "🍕" },
+  { id: "corrugated-boxes", name: "corrugated-boxes", icon: "📦" }
 ]
-
 export const products: Product[] = [
+  // =====================
+  // PIZZA BOXES
+  // =====================
   {
-    id: "prod-001",
-    name: "Premium Food Container",
+    id: "pizza-001",
+    name: "Custom Pizza Box",
     description:
-      "High-quality, food-grade plastic containers perfect for storage and transport. BPA-free and microwave safe.",
-    price: 24.99,
-    category: "containers",
-    image: "/modern-clear-plastic-food-storage-container.jpg",
-    features: ["BPA-Free material", "Microwave & dishwasher safe", "Airtight seal", "Stackable design"],
+      "Premium custom-printed pizza boxes made from food-grade cardboard. Available in all standard pizza sizes.",
+    price: 0.49,
+    category: "pizza-boxes",
+    image: "/pizzaBox1.png",
+    features: [
+      "Food grade",
+      "Grease resistant",
+      "Custom printing",
+      "All sizes",
+    ],
     specifications: {
-      material: "PP Plastic",
-      size: "1000ml",
-      color: "Clear",
+      material: "Corrugated Kraft Cardboard",
+      size: "9 / 12 / 14 / 16 inch",
+      color: "Brown / Custom Print",
     },
     inStock: true,
     rating: 4.8,
-    reviews: 127,
+    reviews: 142,
   },
+
   {
-    id: "prod-002",
-    name: "Industrial Storage Bin",
-    description: "Heavy-duty storage bins designed for industrial use. Durable construction withstands heavy loads.",
-    price: 89.99,
-    category: "containers",
-    image: "/large-red-industrial-plastic-storage-bin.jpg",
-    features: ["Heavy-duty construction", "Weather resistant", "Reinforced handles", "Stackable up to 5 high"],
+    id: "pizza-002",
+    name: "Pizza Slice Box",
+    description:
+      "Compact pizza slice boxes ideal for takeaway counters and quick service restaurants.",
+    price: 0.29,
+    category: "pizza-boxes",
+    image: "/pizzaBox2.png",
+    features: [
+      "Compact design",
+      "Quick service",
+      "Grease resistant",
+      "Easy folding",
+    ],
     specifications: {
-      material: "HDPE Plastic",
-      size: "50L",
-      color: "Red",
+      material: "Kraft Paperboard",
+      size: "Single / Double / Family",
+      color: "White / Custom Print",
     },
     inStock: true,
     rating: 4.9,
+    reviews: 98,
+  },
+
+  {
+    id: "pizza-003",
+    name: "Pizza Box With Window",
+    description:
+      "Pizza boxes with transparent window for premium presentation without opening the box.",
+    price: 0.69,
+    category: "pizza-boxes",
+    image: "/pizzaBox3.png",
+    features: [
+      "Clear window",
+      "Premium look",
+      "Heat vents",
+      "Custom print",
+    ],
+    specifications: {
+      material: "Corrugated Cardboard + PET Window",
+      size: "9 / 12 / 14 / 16 inch",
+      color: "Brown / Custom Print",
+    },
+    inStock: true,
+    rating: 4.7,
+    reviews: 121,
+  },
+
+  {
+    id: "pizza-004",
+    name: "Double Wall Pizza Box",
+    description:
+      "Heavy-duty pizza boxes designed for extra toppings and long-distance delivery.",
+    price: 0.79,
+    category: "pizza-boxes",
+    image: "/pizzaBox4.png",
+    features: [
+      "Double wall",
+      "Extra strength",
+      "Heat insulation",
+      "Delivery safe",
+    ],
+    specifications: {
+      material: "Double Wall Corrugated Cardboard",
+      size: "9 / 12 / 14 / 16 inch",
+      color: "White / Custom Print",
+    },
+    inStock: true,
+    rating: 4.9,
+    reviews: 76,
+  },
+
+  // =====================
+  // CORRUGATED BOXES
+  // =====================
+  {
+    id: "corrugated-001",
+    name: "Single Wall Corrugated Box",
+    description:
+      "Lightweight corrugated boxes suitable for shipping, storage, and retail packaging.",
+    price: 1.29,
+    category: "corrugated-boxes",
+    image: "/corrugatedBox1.jpg",
+    features: [
+      "Lightweight strength",
+      "Cost effective",
+      "Eco friendly",
+      "Custom sizes",
+    ],
+    specifications: {
+      material: "Single Wall Corrugated Cardboard",
+      size: "Small / Medium / Large",
+      color: "Brown / Custom Print",
+    },
+    inStock: true,
+    rating: 4.7,
+    reviews: 64,
+  },
+
+  {
+    id: "corrugated-002",
+    name: "Double Wall Corrugated Box",
+    description:
+      "Heavy-duty corrugated boxes for fragile goods and long-distance transportation.",
+    price: 2.49,
+    category: "corrugated-boxes",
+    image: "/corrugatedBox2.jpg",
+    features: [
+      "Heavy duty",
+      "High strength",
+      "Impact resistant",
+      "Bulk orders",
+    ],
+    specifications: {
+      material: "Double Wall Corrugated Cardboard",
+      size: "Medium / Large / Extra Large",
+      color: "Brown / Custom Print",
+    },
+    inStock: true,
+    rating: 4.9,
+    reviews: 112,
+  },
+
+  {
+    id: "corrugated-003",
+    name: "Printed Corrugated Box",
+    description:
+      "Custom printed corrugated boxes for ecommerce branding and retail presentation.",
+    price: 2.99,
+    category: "corrugated-boxes",
+    image: "/corrugatedBox3.jpg",
+    features: [
+      "Custom printing",
+      "Brand ready",
+      "Retail friendly",
+      "Food safe",
+    ],
+    specifications: {
+      material: "Corrugated Cardboard",
+      size: "All custom sizes",
+      color: "White / Custom Print",
+    },
+    inStock: true,
+    rating: 4.8,
     reviews: 89,
   },
+
   {
-    id: "prod-003",
-    name: "Water Bottle - 750ml",
-    description: "Ergonomic sports water bottle with leak-proof cap. Perfect for gym, travel, and outdoor activities.",
-    price: 12.99,
-    category: "bottles",
-    image: "/modern-sports-water-bottle-red-cap.jpg",
-    features: ["Leak-proof design", "Easy-grip texture", "Wide mouth opening", "BPA-Free"],
+    id: "corrugated-004",
+    name: "Die Cut Corrugated Box",
+    description:
+      "Precision die-cut corrugated boxes for secure fit and fast assembly.",
+    price: 3.49,
+    category: "corrugated-boxes",
+    image: "/corrugatedBox4.jpg",
+    features: [
+      "Die cut",
+      "Easy assembly",
+      "Secure fit",
+      "Custom design",
+    ],
     specifications: {
-      material: "PET Plastic",
-      size: "750ml",
-      capacity: "750ml",
-      color: "Clear with Red Cap",
-    },
-    inStock: true,
-    rating: 4.7,
-    reviews: 203,
-  },
-  {
-    id: "prod-004",
-    name: "Shopping Bags - Pack of 100",
-    description: "Eco-friendly reusable shopping bags. Strong, durable, and perfect for retail businesses.",
-    price: 49.99,
-    category: "bags",
-    image: "/white-plastic-shopping-bags-handles.jpg",
-    features: ["Recyclable material", "Strong handles", "Large capacity", "Bulk pricing available"],
-    specifications: {
-      material: "LDPE Plastic",
-      size: "40x50cm",
-      color: "White",
-    },
-    inStock: true,
-    rating: 4.6,
-    reviews: 156,
-  },
-  {
-    id: "prod-005",
-    name: "Bubble Wrap Roll",
-    description: "Protective packaging material for shipping and storage. Keeps items safe during transit.",
-    price: 34.99,
-    category: "packaging",
-    image: "/bubble-wrap-roll-packaging-material.jpg",
-    features: ["Shock absorption", "Lightweight", "Perforated sheets", "Multi-purpose use"],
-    specifications: {
-      material: "Polyethylene",
-      size: "50m x 60cm",
-      color: "Clear",
+      material: "Corrugated Cardboard",
+      size: "Custom dimensions",
+      color: "Brown / White",
     },
     inStock: true,
     rating: 4.8,
-    reviews: 94,
+    reviews: 53,
   },
+
   {
-    id: "prod-006",
-    name: "Takeaway Container Set",
-    description: "Professional takeaway containers for restaurants. Secure lid closure and leak-resistant.",
-    price: 39.99,
-    category: "containers",
-    image: "/takeaway-food-containers-with-lids.jpg",
-    features: ["Leak-resistant", "Microwave safe", "Stackable", "Pack of 50"],
+    id: "corrugated-005",
+    name: "Heavy Duty Shipping Box",
+    description:
+      "Industrial-grade corrugated boxes designed for high load and warehouse use.",
+    price: 3.99,
+    category: "corrugated-boxes",
+    image: "/corrugatedBox5.jpg",
+    features: [
+      "Industrial grade",
+      "High load",
+      "Warehouse use",
+      "Long distance",
+    ],
     specifications: {
-      material: "PP Plastic",
-      size: "750ml",
-      color: "Black base with clear lid",
-    },
-    inStock: true,
-    rating: 4.7,
-    reviews: 178,
-  },
-  {
-    id: "prod-007",
-    name: "Juice Bottles - 500ml",
-    description: "Clear PET bottles perfect for beverages, juices, and cold drinks. Tamper-evident caps included.",
-    price: 29.99,
-    category: "bottles",
-    image: "/clear-plastic-juice-bottles-caps.jpg",
-    features: ["Crystal clear", "Tamper-evident caps", "Pack of 24", "Food grade"],
-    specifications: {
-      material: "PET Plastic",
-      size: "500ml",
-      capacity: "500ml",
-      color: "Clear",
-    },
-    inStock: true,
-    rating: 4.9,
-    reviews: 145,
-  },
-  {
-    id: "prod-008",
-    name: "Custom Packaging Solution",
-    description: "Tailored packaging solutions for your business needs. Contact us for custom designs and bulk orders.",
-    price: 199.99,
-    category: "custom",
-    image: "/custom-branded-packaging-boxes.jpg",
-    features: ["Custom design", "Brand logo printing", "Any size available", "MOQ: 500 units"],
-    specifications: {
-      material: "Various options",
-      size: "Custom",
-      color: "Custom",
+      material: "Triple Wall Corrugated Cardboard",
+      size: "Large / Extra Large",
+      color: "Brown",
     },
     inStock: true,
     rating: 5.0,
-    reviews: 42,
+    reviews: 41,
+  },
+
+  {
+    id: "corrugated-006",
+    name: "Custom Corrugated Packaging",
+    description:
+      "Fully customized corrugated packaging solutions tailored to your product needs.",
+    price: 4.99,
+    category: "corrugated-boxes",
+    image: "/corrugatedBox6.jpg",
+    features: [
+      "Fully custom",
+      "Any size",
+      "Branding ready",
+      "Bulk pricing",
+    ],
+    specifications: {
+      material: "Corrugated Cardboard",
+      size: "Any custom size",
+      color: "Brown / White / Printed",
+    },
+    inStock: true,
+    rating: 4.9,
+    reviews: 78,
   },
 ]
+
+
+
+
+
 
 export function getProductById(id: string): Product | undefined {
   return products.find((p) => p.id === id)

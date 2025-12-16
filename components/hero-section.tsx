@@ -77,7 +77,7 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative aspect-square rounded-2xl overflow-hidden bg-muted">
               <img
-                src="/modern-plastic-containers-and-packaging-products-a.jpg"
+                src="/d05d3f11-a293-451a-ab22-426b7eeb8397.png"
                 alt="NewPack Products"
                 className="w-full h-full object-cover"
               />
