@@ -80,7 +80,7 @@ export const products: Product[] = [
       "Pizza boxes with transparent window for premium presentation without opening the box.",
     price: 0.69,
     category: "pizza-boxes",
-    image: "/pizzaBox3.png",
+    image: "/pizzabox3.png",
     features: [
       "Clear window",
       "Premium look",
