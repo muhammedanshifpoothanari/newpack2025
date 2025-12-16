@@ -53,6 +53,7 @@ export function ProductDetails({ product }: ProductDetailsProps) {
                 />
           <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" priority />
         </div>
+        
 
         {/* Product Info */}
         <div className="flex flex-col">
